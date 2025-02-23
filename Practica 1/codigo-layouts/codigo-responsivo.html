@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo Layout Responsivo</title>
+    <link rel="stylesheet" href="../estilos/style2.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Layout Responsivo</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>3. Layout Responsivo</h2>
+            <ul>
+                <li>Se ajusta dinámicamente mediante media queries.</li>
+                <li>Ventaja: Mejor experiencia en múltiples dispositivos.</li>
+                <li>Desventaja: Requiere más trabajo de diseño y pruebas.</li>
+            </ul>
+        </section>
+        <p>
+        <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="es"&gt;
+                
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Layout Responsivo&lt;/title&gt;
+                    &lt;style&gt;
+                        .container {
+                            font-family: 'Poppins', sans-serif;
+                            width: 90%;
+                            margin: auto;
+                            background: lightgreen;
+                            padding: 20px;
+                        }
+                
+                        @media (max-width: 600px) {
+                            .container {
+                                width: 100%;
+                                background: orange;
+                            }
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                
+                &lt;body&gt;
+                    &lt;div class="container"&gt;
+                        &lt;h2&gt;Este es un layout responsivo&lt;/h2&gt;
+                        &lt;p&gt;Cambia de color y tamaño cuando la pantalla es pequeña.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                
+                &lt;/html&gt;
+                </pre>
+
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo Layout Modular</title>
+    <link rel="stylesheet" href="../estilos/style2.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Layout Modular</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>6. Layout Modular</h2>
+            <ul>
+                <li>Divide la página en bloques independientes.</li>
+                <li>Ventaja: Flexible y fácil de reorganizar.</li>
+                <li>Desventaja: Puede ser complejo sin una buena jerarquía visual.</li>
+            </ul>
+        </section>
+        <p>
+        <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="es"&gt;
+                
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Layout Modular&lt;/title&gt;
+                    &lt;style&gt;
+                        .container {
+                            font-family: 'Poppins', sans-serif;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 10px;
+                            padding: 10px;
+                        }
+                
+                        .module {
+                            background: lightblue;
+                            padding: 20px;
+                            flex: 1 1 calc(33% - 20px);
+                            text-align: center;
+                        }
+                
+                        @media (max-width: 600px) {
+                            .module {
+                                flex: 1 1 100%;
+                            }
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                
+                &lt;body&gt;
+                    &lt;div class="container"&gt;
+                        &lt;div class="module"&gt;Módulo 1&lt;/div&gt;
+                        &lt;div class="module"&gt;Módulo 2&lt;/div&gt;
+                        &lt;div class="module"&gt;Módulo 3&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                
+                &lt;/html&gt;
+                </pre>
+
+        </p>
+    </div>
+</body>
+
+</html>
