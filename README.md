@@ -14,3 +14,5 @@ Layout Adaptativo: Carga diferentes diseños según el dispositivo.
 Layout en Rejilla (Grid Layout): Organiza elementos en una cuadrícula flexible.
 Layout Modular: Divide la página en módulos independientes.
 Layout Asimétrico: Crea estructuras más dinámicas y modernas.
+
+Enlace de Pagina: https://yaraichuta14050612.github.io/Practica1Web3/
